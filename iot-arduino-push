@@ -4,5 +4,5 @@
 cd /home/glins/Documents/TAC-K/iot-arduino
 git init
 git add *
-git commit
+git commit -m "Atualizando arquivos"
 git push
