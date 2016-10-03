@@ -1,0 +1,8 @@
+#!/bin/bash
+# Update Documents/ files
+
+cd /home/glins/Documents/
+git init
+git add *
+git commit -m "Atualizando documentos"
+git push

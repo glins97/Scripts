@@ -1,5 +1,5 @@
 #!/bin/bash
-# My first script
+# Start Guitar Hero 3
 
 cd /home/glins/.wine/drive_c/Program\ Files\ \(x86\)/Aspyr/Guitar\ Hero\ III/ /Aspyr/Guitar Hero III
 wine GH3.exe

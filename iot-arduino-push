@@ -1,0 +1,8 @@
+#!/bin/bash
+# Update Documents/TAC-K/iot-arduino/ files
+
+cd /home/glins/Documents/TAC-K/iot-arduino
+git init
+git add *
+git commit
+git push
