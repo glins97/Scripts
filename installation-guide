@@ -3,6 +3,9 @@
 # setting up keyboard layout
 1. loadkeys br-abnt2
 
+# check internet connection
+1.5 ping 8.8.8.8
+
 # check disk distribution
 2. lsblk
 
@@ -77,11 +80,8 @@
    19.1 reboot
 
 # install stuff
-20. pacman -S lightdm
-	pacman -S xorg xorg-server
-	pacman -S deepin
-	pacman -S deepin-terminal
-	
+20. pacman -S lightdm xorg xorg-server deepin deepin-terminal
+
 # create new user, add permissions
 21. useradd -m -G wheel,users -s /bin/bash desired_username
 	# set its password
@@ -105,7 +105,7 @@
 =========
 
 # update repositories
-24. nano /etc/pacman.conf
+24. sudo nano /etc/pacman.conf
 	# uncomment
 		[multilib]
 		Include = /etc/pacman.d/mirrorlist
@@ -116,10 +116,10 @@
 	24.1 pacman -Syu
 
 # install programs
-25. sudo pacman -S yaourt git leafpad steam steam-native-runtime chromium qucs libreoffice teamspeak3 
+25. sudo pacman -S yaourt git netowkmanager network-manager-applet leafpad steam steam-native-runtime chromium qucs libreoffice teamspeak3 
 
 # install programs from AUR
-26. yaourt -S spotify stremio-bin breeze-snow-cursor-theme skypeforlinux-bin arduino archey3
+26. yaourt -S sl spotify stremio-bin breeze-snow-cursor-theme skypeforlinux-bin arduino archey3
 
    
    
