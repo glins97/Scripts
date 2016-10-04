@@ -49,6 +49,9 @@
 # create grub configuration file
 13. grub-mkconfig -o /boot/grub/grub.cfg
 
+JADISCKEGAY
+pacman -S iw iwconfig wpa_supplicant wifi-menu
+
 # exit chroot
 14. exit
    # generate fstab file
@@ -56,6 +59,7 @@
 
 # unmount drive
 15. umount /mnt
+
 
 # reboot system
 16. reboot
