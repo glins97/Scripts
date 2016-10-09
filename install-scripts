@@ -2,5 +2,5 @@
 #Install assistant
 
 sudo chmod 755 *
-cd /home/glins97/Scripts/
+cd ~/Scripts/
 sudo cp * /usr/local/bin
