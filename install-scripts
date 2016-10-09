@@ -1,0 +1,6 @@
+#!/bin/bash
+#Install assistant
+
+sudo chmod 755 *
+cd /home/glins97/Scripts/
+sudo cp * /usr/local/bin

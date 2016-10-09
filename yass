@@ -1,0 +1,8 @@
+#!/bin/bash
+#Install assistant
+
+if [ "$1" = "-q" ]; then
+	yaourt -Ssq $@
+else
+	yaourt -Ss $@
+fi

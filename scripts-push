@@ -1,7 +1,7 @@
 #!/bin/bash
 # Update Scripts/ files
 
-cd /home/glins/Scripts/
+cd ~/Scripts/
 git init
 git add *
 git commit -m "Atualizando scripts"

@@ -1,0 +1,8 @@
+#!/bin/bash
+#Install assistant
+
+if ["$1" = "-q"]; then
+	pacman -Ssq $@
+else
+	pacman -Ss $@
+fi
