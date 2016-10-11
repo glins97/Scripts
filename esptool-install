@@ -1,9 +1,9 @@
 #!/bin/bash
 # esptool
 
-if ["$1" != ""]
+if [ $# -eq 0 ]
 then
-	sudo esptool.py --port "$1" --baud 115200 write_flash --verify -fs 8m 0x00000 bin/eagle.flash.bin 0x10000 bin/eagle.irom0text.bin 0xfc000 bin/esp_init_data_default.bin 0x7e000 bin/blank.bin 0xfe000 bin/blank.bin 
+	echo "Missing port. /dev/ttyACMX"	
 else
-	echo "COLOCA A PORTA SEU FDP"
+	sudo esptool.py --port "$1" --baud 115200 write_flash --verify -fs 8m 0x00000 bin/eagle.flash.bin 0x10000 bin/eagle.irom0text.bin 0xfc000 bin/esp_init_data_default.bin 0x7e000 bin/blank.bin 0xfe000 bin/blank.bin 
 fi
