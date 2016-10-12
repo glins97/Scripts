@@ -1,4 +1,22 @@
 #!/bin/bash
 # Create AD-Hoc Network
 
-sudo create_ap wlp3s0 enp2s0 glins qazxsaq01        
+if [ $# -eq 0 ]; then
+	echo " >> Created GENERAL Wireless Network."
+	echo "    SSID: glins97;"
+	echo "    Password: default_password"        
+	sudo create_ap wlp3s0 enp2s0 glins qazxsaq01 > /dev/null
+else
+	if [ $# -eq 1 ]; then
+			echo " >> Created SPECIFIC Wireless Network."
+			echo "    SSID: $1"
+			echo "    Password: default_password"
+			sudo create_ap wlp3s0 enp2s0 "$1" qazxsaq01 > /dev/null
+	fi
+	if [ $# -eq 2 ]; then
+			echo " >> Created SPECIFIC Wireless Network."
+			echo "    SSID: $1"
+			echo "    Password: $2"
+			sudo create_ap wlp3s0 enp2s0 "$1" "$2" > /dev/null
+	fi
+fi
