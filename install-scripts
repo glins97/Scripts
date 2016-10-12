@@ -1,6 +1,6 @@
 #!/bin/bash
 #Install assistant
 
-sudo chmod 755 *
 cd ~/Scripts/
+sudo chmod 755 *
 sudo cp * /usr/local/bin

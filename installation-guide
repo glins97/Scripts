@@ -120,7 +120,7 @@ pacman -S iw iwconfig wpa_supplicant wifi-menu
 	24.1 pacman -Syu
 
 # install programs
-25. sudo pacman -S yaourt git speedcrunch evince netowkmanager network-manager-applet leafpad sublime-text steam steam-native-runtime chromium qucs libreoffice teamspeak3 transmission
+25. sudo pacman -S yaourt git speedcrunch evince networkmanager network-manager-applet leafpad sublime-text steam steam-native-runtime chromium qucs libreoffice teamspeak3 transmission --needed --noconfirm
 
 # install programs from AUR
 26. yaourt -S sl spotify stremio-bin breeze-snow-cursor-theme skypeforlinux-bin arduino archey3
